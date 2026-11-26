@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Saurabh Kanade — Scroll-stopping visuals. Story-driven edits.</title>
+<meta name="description" content="Senior Visual Designer and Video Editor in Pune. Brand identity, advertising creatives, video, motion and AI-assisted production.">
+<meta property="og:title" content="Saurabh Kanade — Scroll-stopping visuals. Story-driven edits."><meta property="og:description" content="Senior Visual Designer and Video Editor. Brand identity, advertising creatives, video, motion and AI-assisted production.">
+<meta name="theme-color" content="#0047EA">
+<link rel="icon" href="../site/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FFFFFF;--bg2:#F7F8FC;--ink:#0B1220;--ink2:#4A5264;--ink3:#7C8396;--line:#E7E9F0;
+  --accent:#0047EA;--accent2:#0039C7;--soft:#EEF2FF;--card:#FFFFFF;
+  --shadow:0 1px 2px rgba(11,18,32,.04),0 12px 32px rgba(11,18,32,.06);
+  --serif:"Instrument Serif",Georgia,serif;--sans:"Plus Jakarta Sans",system-ui,sans-serif;--mono:"JetBrains Mono",monospace;
+  --w:1120px;--r:20px;--pad:112px;
+  /* type scale */
+  --t-h1:clamp(2.8rem,5.6vw,5rem);--t-h2:clamp(2rem,3.4vw,2.9rem);--t-h3:1.5rem;--t-lede:clamp(1.05rem,1.35vw,1.2rem);--t-body:1.02rem;--t-small:.92rem;--t-label:.74rem;
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 var(--t-body)/1.65 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}ul{margin:0;padding:0;list-style:none}
+h1,h2,h3{margin:0;font-weight:400;letter-spacing:-.015em}
+h1{font:400 var(--t-h1)/1.04 var(--serif);text-wrap:balance}
+h2{font:400 var(--t-h2)/1.1 var(--serif);text-wrap:balance}
+h3{font:400 var(--t-h3)/1.2 var(--serif)}
+em{font-style:italic;color:var(--accent)}
+p{margin:0;color:var(--ink2)}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 24px}
+.label{font:700 var(--t-label)/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+.lede{font-size:var(--t-lede);line-height:1.6;color:var(--ink2);max-width:58ch}
+.sec{padding:var(--pad) 0}.sec.alt{background:var(--bg2)}
+.head{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:end;margin-bottom:48px}
+.head .label{display:block;margin-bottom:14px}.head .more{font-weight:600;color:var(--ink2);padding-bottom:6px}.head .more:hover{color:var(--accent)}
+@media(max-width:640px){.head{grid-template-columns:1fr}}
+
+/* nav */
+.navw{position:fixed;top:16px;left:0;right:0;z-index:60;display:flex;justify-content:center;padding:0 16px;pointer-events:none}
+.nav{pointer-events:auto;display:flex;align-items:center;gap:6px;height:56px;padding:0 6px 0 16px;border-radius:999px;background:rgba(255,255,255,.8);backdrop-filter:blur(16px);border:1px solid var(--line);box-shadow:var(--shadow)}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:.95rem;margin-right:14px}
+.mark{width:30px;height:30px;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center;font:italic 400 .95rem var(--serif)}
+.nav .links a{display:inline-block;padding:10px 14px;border-radius:999px;font-weight:500;font-size:.94rem;color:var(--ink2)}.nav .links a:hover{color:var(--ink);background:var(--soft)}
+.nav .cta{height:44px;display:inline-flex;align-items:center;padding:0 18px;border-radius:999px;background:var(--ink);color:#fff;font-weight:600;font-size:.94rem;margin-left:6px}
+@media(max-width:760px){.nav .links,.logo span{display:none}.logo{margin-right:4px}}
+
+/* hero */
+.hero{position:relative;padding:176px 0 96px;text-align:center;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(600px 320px at 50% 0%,rgba(0,71,234,.10),transparent 70%),
+  linear-gradient(var(--line) 1px,transparent 1px) 0 0/100% 72px,linear-gradient(90deg,var(--line) 1px,transparent 1px) 0 0/72px 100%;
+  -webkit-mask-image:radial-gradient(ellipse 70% 60% at 50% 30%,#000 40%,transparent 100%);mask-image:radial-gradient(ellipse 70% 60% at 50% 30%,#000 40%,transparent 100%);opacity:.7}
+.hero .wrap{position:relative}
+.hi{display:inline-flex;align-items:center;gap:8px;height:38px;padding:0 16px;border-radius:999px;background:var(--ink);color:#fff;font-weight:600;font-size:.86rem;position:relative;margin-bottom:34px}
+.hi::after{content:"";position:absolute;left:50%;top:100%;transform:translateX(-50%);border:7px solid transparent;border-top-color:var(--ink)}
+.hi .wave{display:inline-block;animation:wave 1.6s ease-in-out infinite;transform-origin:70% 70%}
+@keyframes wave{0%,100%{transform:rotate(0)}30%{transform:rotate(16deg)}70%{transform:rotate(-8deg)}}
+.hero h1{max-width:none;margin:0 auto 14px}.hero h1 .hl{display:block;width:fit-content;margin:0 auto}
+.hl{color:var(--accent);background:linear-gradient(transparent 64%,var(--soft) 64%);-webkit-box-decoration-break:clone;box-decoration-break:clone;padding:0 .08em}
+.hero .lede{margin:0 auto 18px}
+.tv{display:block;width:min(560px,90vw);height:auto;margin:6px auto 30px;overflow:visible}
+.current{font-size:.98rem;color:var(--ink2)}
+.current .dot{display:inline-block;vertical-align:middle;width:8px;height:8px;border-radius:50%;background:#16A34A;margin:-2px 10px 0 0;animation:pulse 1.8s infinite}
+.current strong{color:var(--ink);font-weight:700}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(22,163,74,.5)}70%{box-shadow:0 0 0 9px rgba(22,163,74,0)}100%{box-shadow:0 0 0 0 rgba(22,163,74,0)}}
+.btns{display:flex;justify-content:center;gap:12px;margin-top:34px}
+.btn{height:50px;display:inline-flex;align-items:center;gap:8px;padding:0 24px;border-radius:999px;font-weight:600;font-size:.96rem;border:1px solid transparent;transition:transform .15s,background .2s,border-color .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.primary{background:var(--accent);color:#fff}.btn.primary:hover{background:var(--accent2)}
+.btn.ghost{border-color:var(--line);background:#fff;color:var(--ink)}.btn.ghost:hover{border-color:var(--ink)}
+.numbers{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;max-width:920px;margin:64px auto 0}
+@media(max-width:760px){.numbers{grid-template-columns:repeat(2,1fr)}}
+.n{padding:22px 24px;border:1px solid var(--line);border-radius:var(--r);background:var(--card);text-align:left;box-shadow:var(--shadow)}
+.n b{display:block;font:400 2.2rem/1 var(--serif);margin-bottom:8px}.n span{font-size:var(--t-small);color:var(--ink3)}
+
+/* brands */
+.brands{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg2);padding:26px 0;overflow:hidden;position:relative}
+.brands::before,.brands::after{content:"";position:absolute;top:0;bottom:0;width:140px;z-index:1;pointer-events:none}
+.brands::before{left:0;background:linear-gradient(90deg,var(--bg2),transparent)}.brands::after{right:0;background:linear-gradient(270deg,var(--bg2),transparent)}
+.brands ul{display:flex;align-items:center;gap:72px;width:max-content;animation:scroll 80s linear infinite;font:400 1.45rem/1 var(--serif);color:var(--ink3);white-space:nowrap}
+@keyframes scroll{to{transform:translateX(-33.333%)}}
+.brands li{flex:none}.brands li.lg img{display:block;height:44px;width:auto;max-width:none;mix-blend-mode:multiply;filter:grayscale(1) contrast(1.5) brightness(.85);opacity:.75;transition:filter .3s,opacity .3s}.brands li.lg img[src*="rv-university"]{filter:grayscale(1) contrast(1.4) brightness(.45)}.brands li.lg img:hover,.brands li.lg img[src*="rv-university"]:hover{filter:none;opacity:1}
+@media(max-width:760px){.brands ul{gap:48px}.brands li.lg img{height:34px}}
+
+/* work */
+.works{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media(max-width:960px){.works{grid-template-columns:repeat(2,1fr)}}@media(max-width:600px){.works{grid-template-columns:1fr}}
+.work{display:block}
+.art{aspect-ratio:4/3;border-radius:var(--r);position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:22px;color:#fff;
+  background:radial-gradient(110% 90% at 100% 0%,color-mix(in srgb,var(--g2) 80%,#fff) 0%,transparent 55%),linear-gradient(135deg,var(--g1),var(--g2));
+  box-shadow:var(--shadow);transition:transform .35s cubic-bezier(.2,.7,.2,1)}
+.art::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(-45deg,rgba(255,255,255,.06) 0 2px,transparent 2px 16px)}
+.art-name{position:relative;z-index:1;font:italic 400 1.7rem/1 var(--serif)}
+.work:hover .art{transform:translateY(-6px)}
+.meta{display:flex;justify-content:space-between;align-items:center;margin:18px 0 8px}
+.kind{font:600 var(--t-label)/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.arrow{color:var(--ink3);transition:transform .2s,color .2s}.work:hover .arrow{transform:translateX(4px);color:var(--accent)}
+.work h3{font-size:1.4rem;line-height:1.22;color:var(--ink)}
+
+/* services */
+.svcs{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+@media(max-width:960px){.svcs{grid-template-columns:repeat(2,1fr)}}@media(max-width:560px){.svcs{grid-template-columns:1fr}}
+.svc{padding:28px;border-radius:var(--r);background:var(--card);border:1px solid var(--line);display:flex;flex-direction:column;gap:12px;min-height:220px;transition:transform .2s,border-color .2s}
+.svc:hover{transform:translateY(-3px);border-color:var(--accent)}
+.svc .num{font:500 var(--t-label)/1 var(--mono);color:var(--accent)}
+.svc h3{font-size:1.45rem}.svc p{font-size:var(--t-small);line-height:1.55}
+
+/* reels */
+.reels{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:4px 24px 8px;padding-left:max(24px,calc((100% - var(--w))/2 + 24px))}
+.reels::-webkit-scrollbar{display:none}
+.reel{flex:0 0 200px;aspect-ratio:9/16;border-radius:22px;position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:18px;color:#fff;scroll-snap-align:start;
+  background:radial-gradient(100% 80% at 0% 100%,color-mix(in srgb,var(--g2) 75%,#000) 0%,transparent 60%),linear-gradient(160deg,var(--g1),var(--g2));box-shadow:var(--shadow);transition:transform .25s}
+.reel:hover{transform:translateY(-6px)}
+.reel-t{font:italic 400 1.5rem/1 var(--serif)}
+.play{position:absolute;top:14px;right:14px;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.2);backdrop-filter:blur(6px);display:grid;place-items:center;font-size:.75rem}
+
+/* about */
+.about{display:grid;grid-template-columns:1.05fr .95fr;gap:72px;align-items:start}
+@media(max-width:900px){.about{grid-template-columns:1fr;gap:40px}}
+.about .label{display:block;margin-bottom:14px}.about h2{margin-bottom:22px}
+.about .lede{margin-bottom:26px}
+.tools{font-size:var(--t-small);color:var(--ink3)}.tools b{color:var(--ink2);font-weight:600}
+.prs{display:grid;gap:14px;padding-top:6px}
+.prs li{padding:22px 24px;border-radius:var(--r);background:var(--card);border:1px solid var(--line);border-left:3px solid var(--accent)}
+.prs h3{font-size:1.35rem;margin-bottom:6px}.prs p{font-size:var(--t-small)}
+
+/* contact + footer */
+.contact{background:var(--ink);color:#fff;text-align:center}
+.contact .label{color:#9DB2FF}.contact h2{color:#fff;max-width:18ch;margin:14px auto 18px}.contact .lede{color:rgba(255,255,255,.72);margin:0 auto}
+.contact .btn.ghost{background:transparent;border-color:rgba(255,255,255,.3);color:#fff}.contact .btn.ghost:hover{border-color:#fff}
+.foot{padding:28px 0;font-size:var(--t-small);color:var(--ink3)}
+.foot .wrap{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center}
+.soc{display:flex;gap:22px}.soc a{color:var(--ink2);font-weight:500}.soc a:hover{color:var(--accent)}
+
+/* motion */
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease var(--d,0ms),transform .6s ease var(--d,0ms)}.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}.brands ul{animation:none}}
+.cursor{position:fixed;left:0;top:0;width:32px;height:32px;border:1.5px solid var(--accent);border-radius:50%;pointer-events:none;z-index:99;transform:translate(-50%,-50%);opacity:0;transition:width .15s,height .15s,background .15s;mix-blend-mode:multiply}
+.cursor.big{width:56px;height:56px;background:var(--soft)}
+@media(hover:none),(max-width:1023px){.cursor{display:none}}
+.switch{position:fixed;right:14px;bottom:14px;z-index:70;display:flex;gap:4px;padding:5px;border-radius:999px;background:#0B1220;color:#fff;font:600 .78rem/1 var(--sans);box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.switch a{padding:8px 11px;border-radius:999px;opacity:.75}.switch a.on,.switch a:hover{background:#fff;color:#0B1220;opacity:1}
+</style>
+</head>
+<body id="top">
+<div class="navw"><nav class="nav">
+  <a class="logo" href="#top"><i class="mark">SK</i><span>Saurabh Kanade</span></a>
+  <div class="links"><a href="#top">Home</a><a href="#work">Portfolio</a><a href="https://drive.google.com/file/d/1PRxrifQtp1g-kl-DeCOOoCVd63I0HrQM/view?usp=drive_link" target="_blank" rel="noopener">Resume</a><a href="https://www.linkedin.com/in/saurabhkanade15/" target="_blank" rel="noopener">Connect</a></div>
+  <a class="cta" href="#contact">Let's work</a>
+</nav></div>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div class="hi"><span class="wave">👋</span> Hi, it's me, Saurabh</div>
+    <h1><span class="hl">One creative mind.</span> Many ways to make an impact.</h1>
+    <svg class="tv" viewBox="0 0 620 530" role="img" aria-label="Portrait of Saurabh Kanade on a retro yellow television">
+      <defs>
+        <clipPath id="scr"><rect x="54" y="56" width="384" height="352" rx="70"/></clipPath>
+        <linearGradient id="yel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EEE445"/><stop offset=".55" stop-color="#DDD332"/><stop offset="1" stop-color="#C4BA25"/></linearGradient>
+        <radialGradient id="vig" cx=".5" cy=".5" r=".75"><stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".5"/></radialGradient>
+        <linearGradient id="glare" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".28"/><stop offset=".35" stop-color="#fff" stop-opacity="0"/></linearGradient>
+        <radialGradient id="knob" cx=".35" cy=".3" r=".9"><stop offset="0" stop-color="#fff"/><stop offset=".55" stop-color="#C9CDD2"/><stop offset="1" stop-color="#7C828A"/></radialGradient>
+        <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1.4" fill="#000" opacity=".10"/></pattern>
+        <filter id="sh" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="18" stdDeviation="14" flood-color="#0B1220" flood-opacity=".28"/></filter>
+      </defs>
+      <ellipse cx="310" cy="516" rx="250" ry="10" fill="#0B1220" opacity=".16"/>
+      <rect x="150" y="494" width="46" height="22" rx="8" fill="#B9AF20"/><rect x="424" y="494" width="46" height="22" rx="8" fill="#B9AF20"/>
+      <path d="M96 440h428l-14 54a14 14 0 0 1-14 10H124a14 14 0 0 1-14-10z" fill="#CBC128"/>
+      <g fill="#1d2220"><rect x="130" y="466" width="6" height="22" rx="3"/><rect x="148" y="466" width="6" height="22" rx="3"/><rect x="166" y="466" width="6" height="22" rx="3"/>
+      <rect x="418" y="466" width="5" height="22" rx="2.5"/><rect x="432" y="466" width="5" height="22" rx="2.5"/><rect x="446" y="466" width="5" height="22" rx="2.5"/><rect x="460" y="466" width="5" height="22" rx="2.5"/><rect x="474" y="466" width="5" height="22" rx="2.5"/></g>
+      <rect x="10" y="10" width="600" height="440" rx="84" fill="url(#yel)" filter="url(#sh)"/>
+      <rect x="10" y="10" width="600" height="440" rx="84" fill="none" stroke="#fff" stroke-opacity=".45" stroke-width="3"/>
+      <rect x="32" y="32" width="556" height="396" rx="62" fill="#1b201e"/>
+      <rect x="40" y="40" width="540" height="380" rx="56" fill="#252b29"/>
+      <g clip-path="url(#scr)">
+        <rect x="54" y="56" width="384" height="352" fill="#2c3a2a"/>
+        <image href="img/saurabh.jpg" x="54" y="56" width="384" height="352" preserveAspectRatio="xMidYMid slice"/>
+        <rect x="54" y="56" width="384" height="352" fill="url(#scan)"/>
+        <rect x="54" y="56" width="384" height="352" fill="url(#vig)"/>
+        <rect x="54" y="56" width="384" height="352" fill="url(#glare)"/>
+      </g>
+      <rect x="54" y="56" width="384" height="352" rx="70" fill="none" stroke="#0c0f0e" stroke-width="5"/>
+      <rect x="460" y="56" width="112" height="352" rx="16" fill="#1a1f1d" stroke="#323836" stroke-width="2"/>
+      <g>
+        <circle cx="516" cy="112" r="34" fill="#111514"/><circle cx="516" cy="112" r="27" fill="url(#knob)"/><rect x="513.5" y="88" width="5" height="22" rx="2.5" fill="#3a4047" transform="rotate(35 516 112)"/>
+        <circle cx="516" cy="192" r="29" fill="#111514"/><circle cx="516" cy="192" r="22" fill="url(#knob)"/><rect x="514" y="172" width="4" height="18" rx="2" fill="#3a4047" transform="rotate(-25 516 192)"/>
+      </g>
+      <g fill="#050706">
+        <g id="dr"><circle cx="480" cy="250" r="5"/><circle cx="498" cy="250" r="5"/><circle cx="516" cy="250" r="5"/><circle cx="534" cy="250" r="5"/><circle cx="552" cy="250" r="5"/></g>
+        <use href="#dr" y="18"/><use href="#dr" y="36"/><use href="#dr" y="54"/><use href="#dr" y="72"/><use href="#dr" y="90"/><use href="#dr" y="108"/>
+      </g>
+      <circle cx="488" cy="400" r="14" fill="#0e1110"/><circle cx="488" cy="400" r="10" fill="url(#knob)"/>
+      <circle cx="544" cy="400" r="14" fill="#0e1110"/><circle cx="544" cy="400" r="10" fill="url(#knob)"/>
+    </svg>
+    <p class="lede">Visual designer, video editor, motion enthusiast and creative thinker. I bring different disciplines together to make ideas happen.</p>
+    <p class="current"><span class="dot"></span>Currently at <strong>SRV Media</strong>, leading a small design team</p>
+    <div class="btns"><a class="btn primary" href="#work">See the work</a></div>
+  </div>
+</section>
+
+<section class="brands" aria-label="Brands"><ul><li class="lg"><img src="logos/symbiosis.png" alt="Symbiosis International University" height="44" loading="lazy"></li><li class="lg"><img src="logos/jio-institute.png" alt="Jio Institute" height="44" loading="lazy"></li><li class="lg"><img src="logos/pdeu.png" alt="Pandit Deendayal Energy University" height="44" loading="lazy"></li><li class="lg"><img src="logos/rv-university.png" alt="RV University" height="44" loading="lazy"></li><li class="lg"><img src="logos/aurak.png" alt="American University of Ras Al Khaimah" height="44" loading="lazy"></li><li class="lg"><img src="logos/wellington.png" alt="Wellington College International Pune" height="44" loading="lazy"></li><li class="lg"><img src="logos/weschool.png" alt="S.P. Mandali's WeSchool" height="44" loading="lazy"></li><li class="lg"><img src="logos/mitsd.png" alt="MITAOE School of Design" height="44" loading="lazy"></li><li class="lg"><img src="logos/study-from-uae.png" alt="Study from UAE" height="44" loading="lazy"></li><li class="lg"><img src="logos/pune-metropolis.png" alt="Pune Metropolis" height="44" loading="lazy"></li><li class="lg"><img src="logos/symbiosis.png" alt="Symbiosis International University" height="44" loading="lazy"></li><li class="lg"><img src="logos/jio-institute.png" alt="Jio Institute" height="44" loading="lazy"></li><li class="lg"><img src="logos/pdeu.png" alt="Pandit Deendayal Energy University" height="44" loading="lazy"></li><li class="lg"><img src="logos/rv-university.png" alt="RV University" height="44" loading="lazy"></li><li class="lg"><img src="logos/aurak.png" alt="American University of Ras Al Khaimah" height="44" loading="lazy"></li><li class="lg"><img src="logos/wellington.png" alt="Wellington College International Pune" height="44" loading="lazy"></li><li class="lg"><img src="logos/weschool.png" alt="S.P. Mandali's WeSchool" height="44" loading="lazy"></li><li class="lg"><img src="logos/mitsd.png" alt="MITAOE School of Design" height="44" loading="lazy"></li><li class="lg"><img src="logos/study-from-uae.png" alt="Study from UAE" height="44" loading="lazy"></li><li class="lg"><img src="logos/pune-metropolis.png" alt="Pune Metropolis" height="44" loading="lazy"></li><li class="lg"><img src="logos/symbiosis.png" alt="Symbiosis International University" height="44" loading="lazy"></li><li class="lg"><img src="logos/jio-institute.png" alt="Jio Institute" height="44" loading="lazy"></li><li class="lg"><img src="logos/pdeu.png" alt="Pandit Deendayal Energy University" height="44" loading="lazy"></li><li class="lg"><img src="logos/rv-university.png" alt="RV University" height="44" loading="lazy"></li><li class="lg"><img src="logos/aurak.png" alt="American University of Ras Al Khaimah" height="44" loading="lazy"></li><li class="lg"><img src="logos/wellington.png" alt="Wellington College International Pune" height="44" loading="lazy"></li><li class="lg"><img src="logos/weschool.png" alt="S.P. Mandali's WeSchool" height="44" loading="lazy"></li><li class="lg"><img src="logos/mitsd.png" alt="MITAOE School of Design" height="44" loading="lazy"></li><li class="lg"><img src="logos/study-from-uae.png" alt="Study from UAE" height="44" loading="lazy"></li><li class="lg"><img src="logos/pune-metropolis.png" alt="Pune Metropolis" height="44" loading="lazy"></li></ul></section>
+
+<section id="work" class="sec">
+  <div class="wrap">
+    <div class="head reveal"><div><span class="label">Selected work</span><h2>Six projects, from <em>identity to product.</em></h2></div><a class="more" href="https://www.behance.net/saurabhkanade" target="_blank" rel="noopener">More on Behance →</a></div>
+    <div class="works">
+<a class="work reveal" href="../site/work/winis-kitchen.html" style="--g1:#1E40FF;--g2:#6D28D9;--d:0ms">
+  <div class="art"><span class="art-name">Wini&#x27;s Kitchen</span></div>
+  <div class="meta"><span class="kind">Brand identity</span><span class="arrow">→</span></div>
+  <h3>A cloud kitchen brand that looks as good as it tastes</h3>
+</a>
+<a class="work reveal" href="../site/work/tata-green-batteries.html" style="--g1:#7C3AED;--g2:#DB2777;--d:60ms">
+  <div class="art"><span class="art-name">Tata Green Batteries</span></div>
+  <div class="meta"><span class="kind">Campaign creative</span><span class="arrow">→</span></div>
+  <h3>An Independence Day campaign for a battery brand</h3>
+</a>
+<a class="work reveal" href="../site/work/gully-labs.html" style="--g1:#EA580C;--g2:#DC2626;--d:120ms">
+  <div class="art"><span class="art-name">Gully Labs</span></div>
+  <div class="meta"><span class="kind">Rebrand and visual identity</span><span class="arrow">→</span></div>
+  <h3>Rebranding a sneaker label for the streets it sells to</h3>
+</a>
+<a class="work reveal" href="../site/work/tru-nature.html" style="--g1:#059669;--g2:#0891B2;--d:180ms">
+  <div class="art"><span class="art-name">TRU NATURE</span></div>
+  <div class="meta"><span class="kind">FMCG brand</span><span class="arrow">→</span></div>
+  <h3>Building an FMCG brand that reads as natural at a glance</h3>
+</a>
+<a class="work reveal" href="../site/work/pitch-creatives.html" style="--g1:#D97706;--g2:#EA580C;--d:240ms">
+  <div class="art"><span class="art-name">RV University &amp; PMDRA</span></div>
+  <div class="meta"><span class="kind">Pitch creatives</span><span class="arrow">→</span></div>
+  <h3>Two pitches, two new clients</h3>
+</a>
+<a class="work reveal" href="../site/work/ambulance-management-system.html" style="--g1:#0284C7;--g2:#1E40FF;--d:300ms">
+  <div class="art"><span class="art-name">Onkar Hospital, Supa</span></div>
+  <div class="meta"><span class="kind">Product and UI/UX</span><span class="arrow">→</span></div>
+  <h3>An ambulance management system for a hospital</h3>
+</a></div>
+  </div>
+</section>
+
+<section id="services" class="sec alt">
+  <div class="wrap">
+    <div class="head reveal"><div><span class="label">Services</span><h2>Design that has to <em>perform.</em></h2></div></div>
+    <div class="svcs"><div class="svc reveal" style="--d:0ms"><span class="num">01</span><h3>Brand identity</h3><p>Logos, brand kits and visual systems that hold together everywhere.</p></div><div class="svc reveal" style="--d:60ms"><span class="num">02</span><h3>Advertising creatives</h3><p>Campaign and performance creatives built to stop the scroll.</p></div><div class="svc reveal" style="--d:120ms"><span class="num">03</span><h3>Video &amp; motion</h3><p>Story-driven edits and motion graphics for social, campaigns and brand films.</p></div><div class="svc reveal" style="--d:180ms"><span class="num">04</span><h3>AI-assisted production</h3><p>Image, mockup and video generation that cuts turnaround, not quality.</p></div></div>
+  </div>
+</section>
+
+<section id="content" class="sec">
+  <div class="wrap"><div class="head reveal"><div><span class="label">Content</span><h2>Reels, shorts and <em>things made for fun.</em></h2></div><a class="more" href="https://www.youtube.com/@UptoShortz" target="_blank" rel="noopener">UptoShortz on YouTube →</a></div></div>
+  <div class="reels"><a class="reel" href="https://www.youtube.com/@UptoShortz" target="_blank" rel="noopener" style="--g1:#7C3AED;--g2:#DB2777"><span class="play">▶</span><span class="reel-t">Travel</span></a><a class="reel" href="https://www.youtube.com/@UptoShortz" target="_blank" rel="noopener" style="--g1:#EA580C;--g2:#DC2626"><span class="play">▶</span><span class="reel-t">Cinematic</span></a><a class="reel" href="https://www.youtube.com/@UptoShortz" target="_blank" rel="noopener" style="--g1:#059669;--g2:#0891B2"><span class="play">▶</span><span class="reel-t">Shorts</span></a><a class="reel" href="https://www.instagram.com/saurabhkanadesk/" target="_blank" rel="noopener" style="--g1:#D97706;--g2:#EA580C"><span class="play">▶</span><span class="reel-t">Design tips</span></a><a class="reel" href="https://www.instagram.com/saurabhkanadesk/" target="_blank" rel="noopener" style="--g1:#0284C7;--g2:#1E40FF"><span class="play">▶</span><span class="reel-t">Tutorials</span></a></div>
+</section>
+
+<section id="about" class="sec alt">
+  <div class="wrap about">
+    <div class="reveal">
+      <span class="label">About</span>
+      <h2>Visuals that stop the scroll. <em>Edits that keep people watching.</em></h2>
+      <p class="lede">I am a Visual Designer and Video Editor from Pune with five-plus years in the creative industry. At SRV Media I create and execute advertising creatives, review the team's work before it ships, and represent the creative team with clients and account managers.</p>
+      <p class="tools"><b>Tools</b> &nbsp;Photoshop · Illustrator · Premiere Pro · After Effects · Figma · Webflow · Freepik AI Suite</p>
+    </div>
+    <ul class="prs"><li class="reveal" style="--d:0ms"><h3>Concept first, then craft.</h3><p>The idea that makes someone stop comes before any pixel.</p></li><li class="reveal" style="--d:60ms"><h3>Performance is part of the brief.</h3><p>One message, clear hierarchy, a reason to act.</p></li><li class="reveal" style="--d:120ms"><h3>AI speeds up the hands, not the thinking.</h3><p>Generation and mockups by AI. Judgement and review by me.</p></li></ul>
+  </div>
+</section>
+
+<section id="contact" class="sec contact">
+  <div class="wrap reveal">
+    <span class="label">Contact</span>
+    <h2>Let's make something <em>scroll-stopping.</em></h2>
+    <p class="lede">Based in Pune, working with brands anywhere.</p>
+    <div class="btns"><a class="btn primary" href="https://www.linkedin.com/in/saurabhkanade15" target="_blank" rel="noopener">Message me on LinkedIn</a><a class="btn ghost" href="https://www.behance.net/saurabhkanade" target="_blank" rel="noopener">See Behance</a></div>
+  </div>
+</section>
+</main>
+
+<footer class="foot"><div class="wrap">
+  <span>© 2026 Saurabh Kanade</span>
+  <div class="soc"><a href="https://www.linkedin.com/in/saurabhkanade15" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.behance.net/saurabhkanade" target="_blank" rel="noopener">Behance</a><a href="https://www.instagram.com/saurabhkanadesk/" target="_blank" rel="noopener">Instagram</a><a href="https://www.youtube.com/@UptoShortz" target="_blank" rel="noopener">YouTube</a></div>
+</div></footer>
+<div class="switch"><a href="index.html">Options</a><a href="option-a.html">A v1</a><a class="on" href="option-a-v2.html">A v2</a></div>
+<script>
+(function(){var els=document.querySelectorAll('.reveal');if('IntersectionObserver'in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.1,rootMargin:'0px 0px -6% 0px'});els.forEach(function(e){io.observe(e);});}else{els.forEach(function(e){e.classList.add('in');});}
+if(window.matchMedia('(hover:hover) and (min-width:1024px)').matches){var c=document.createElement('div');c.className='cursor';document.body.appendChild(c);
+document.addEventListener('mousemove',function(e){c.style.opacity=1;c.style.left=e.clientX+'px';c.style.top=e.clientY+'px';});
+document.querySelectorAll('a,button').forEach(function(el){el.addEventListener('mouseenter',function(){c.classList.add('big');});el.addEventListener('mouseleave',function(){c.classList.remove('big');});});}})();
+</script>
+</body></html>
